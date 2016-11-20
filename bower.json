@@ -1,0 +1,24 @@
+{
+  "name": "php_angular",
+  "description": "Framework php&angular",
+  "main": "index.php",
+  "authors": [
+    "Tosti&Loyter&Bellotti"
+  ],
+  "license": "ISC",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "^1.5.8",
+    "angular-route": "^1.5.8",
+    "bootstrap": "^3.3.7",
+    "angular-resource": "^1.5.8",
+    "angular-sanitize": "^1.5.8"
+  }
+}
