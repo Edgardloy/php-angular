@@ -6,6 +6,7 @@
     'ngResource',
     'ngSanitize',
     
+    'App.index',
     'App.ordini'
   ])
 
