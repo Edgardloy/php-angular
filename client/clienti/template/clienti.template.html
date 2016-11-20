@@ -1,0 +1,29 @@
+<span ng-init="vm.listaClienti()"></span>
+<!-- <span ng-init="vm.getMyWeapons()"></span> -->
+<div class="container">
+
+<table class="table table-bordered table-striped">
+  <thead>
+    <tr>
+      <th>Id</th>
+      <th>Nome</th>
+      <th>Cognome</th>
+      <th>Email</th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr ng-repeat="cliente in vm.clienti track by $index">
+      <td ng-bind="cliente.id" ></td>
+      <td ng-bind="cliente.nome" ></td>
+      <td ng-bind="cliente.cognome" ></td>
+      <td ng-bind="cliente.email" ></td>
+      <td><button type="button" ng-click="vm.dettaglioCliente(cliente.id);" class="btn btn-default" name="modifica">Modifica</button></td>
+      <td><button type="button" ng-click="vm.cancellaCliente(cliente.id);" class="btn btn-default" name="cancella">Cancella</button></td>
+    </tr>
+  </tbody>
+</table>
+<button type="button" ng-click="vm.aggiungi();" class="btn btn-default" name="aggiungi">Aggiungi</button>
+<br/>
+</div>
