@@ -18,7 +18,7 @@ class Router {
         return self::$route;
     }
 
-    public static function matchRoute($url) {
+    private static function matchRoute($url) {
         foreach (self::$routes as $pattern => $route) {
             if (preg_match("#$pattern#i", $url, $matches)) {
                 foreach ($matches as $key => $value) {
@@ -38,8 +38,9 @@ class Router {
     }
     
     public static function dispath($url) {
+        echo $url;
         if(self::matchRoute($url)) {
-            $controller = 'app\\controllers\\' . self::$route['controller'];
+            $controller = 'Controller_' . self::$route['controller'];
             if(class_exists($controller)){
                 $cObj = new $controller(self::$route);
                 $action = self::lowerCamelCase(self::$route['action']) . 'Action';

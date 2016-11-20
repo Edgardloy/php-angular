@@ -1,3 +1,5 @@
 AddDefaultCharset utf-8
 RewriteEngine On
-RewriteRule ^(.*)$ /server/$1
+#RewriteRule ^(.*)$ /server/$1
+
+RewriteRule ^(.*)$ /build/$1 [L,QSA]

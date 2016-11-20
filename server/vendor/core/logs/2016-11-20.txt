@@ -1,0 +1,17 @@
+Time : 18:36:32
+SQLSTATE[HY000] [1049] Unknown database 'artoo_artoo'
+
+Time : 18:36:00
+SQLSTATE[HY000] [1045] Access denied for user ''@'localhost' (using password: NO)
+
+Time : 18:35:51
+SQLSTATE[HY000] [1045] Access denied for user ''@'localhost' (using password: NO)
+
+Time : 18:35:32
+SQLSTATE[HY000] [1045] Access denied for user ''@'localhost' (using password: NO)
+
+Time : 18:35:05
+SQLSTATE[HY000] [1045] Access denied for user ''@'localhost' (using password: NO)
+
+Time : 18:34:50
+SQLSTATE[HY000] [1045] Access denied for user ''@'localhost' (using password: NO)
